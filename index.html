@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styleIndex.css">
+    <script src="scriptIndex.js" defer></script>
+    <script src="https://s3.tradingview.com/tv.js" defer></script>
+</head>
+
+<body>
+    <div class="loading-overlay"> <!-- Overlay du chargement -->
+        <div class="loading-image"></div> <!-- Image du chargement -->
+    </div>
+    <img id="backgroundVideo" src="img/pexels-josh-sorenson-1025349.jpg" /> <!-- Ajoute la vidéo de fond -->
+    <header id="header"> <!-- En-tête de la page -->
+        <div class="fade-in" id="title"> <!-- Titre du site -->
+            <img src="img/bitcoin.png" alt="logo bitcoin" class="logobtc" />
+            <img src="img/bitcoin.png" alt="logo bitcoin" class="logobtc2" />
+        </div>
+        <div id="span" class="txt-rotate fade-in" data-period="2000"
+            data-rotate='["Revolutionary.", "Innovative.", "Growth.", "Opportunity.", "Disruptive.", "Digital.", "Emerging.", "Promising.", "Decentralized.", "Financial freedom.", "Advancement.", "Revelation.", "Success.", "Expansion.", "Adoption.", "Reform.", "Revolution.", "Progress.", "Visionary.", "Prosperity.", "Transformation.", "Exploration.", "Empowerment.", "Evolution.", "Secure exchange."]'>
+            Test </div>
+        <nav class="navbar animation1">
+            <li><a href="index.html">Accueil</a> </li>
+            <li><a href="about.html">A propos</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+            <li><a href="halving.html">Halving</a></li>
+        </nav>  
+        <img src="img/menu.png" alt="logo menu" class="menu-hamburger" />
+    </header>
+    <main id="main"> <!-- Corps de la page -->
+        <div id="menu" class="fade-in"> <!-- Menu déroulant de la page -->
+        </div>
+        <div id="content1" class="fade-in"> <!-- Contenu 1 de la page -->
+        </div>
+        <!-- TradingView Widget BEGIN -->
+        <div class="fade-in tradingview-widget-container">
+            <div id="tradingview_3c508"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script id="script-tradingview" type="text/javascript" src="script-tradingview-btc.js">
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <div id="content3" class="fade-in"> <!-- Contenu 3 de la page -->
+            <p><strong>"Vol" (Volume)</strong> est un indicateur qui affiche le volume des transactions effectuées sur
+                le marché. <br> Il peut aider à <strong>déterminer la force d'une tendance</strong> ou d'un mouvement de
+                prix, en montrant la participation des traders et en <strong>identifiant les moments clés où le volume
+                    s'accroît ou diminue</strong>. <br><br><strong>"CHOP" (Chopiness Index)</strong> est un indicateur
+                qui évalue <strong>la volatilité du marché</strong> en fonction de la tendance des prix à osciller ou à
+                rester stables sur une période donnée, offrant ainsi des informations sur les phases de tendance et de
+                consolidation. <br><strong>Plus le chopiness est élevé, plus le marché est volatil</strong>.</p>
+        </div>
+        <div id="content2" class="fade-in"> <!-- Contenu 2 de la page -->
+            <img id="fearAndGreed" src="https://alternative.me/crypto/fear-and-greed-index.png"
+                alt="Latest Crypto Fear & Greed Index" /> <!-- Image de l'indice Fear & Greed -->
+            <p class="fade-in" id="fearAndGreedText"> <strong> Pourquoi mesurer la peur et la cupidité ? </strong> <br>
+                <br>
+                Le comportement du marché de la cryptographie est très émotionnel. Les gens ont tendance à devenir
+                gourmands lorsque le marché est en hausse, ce qui se traduit par <strong>FOMO (Fear of missing
+                    out)</strong>. De plus, les gens vendent souvent leurs pièces en réaction irrationnelle en voyant
+                des chiffres rouges. Avec notre indice de peur et de cupidité, <strong>nous essayons de vous sauver de
+                    vos propres réactions émotionnelles excessives</strong>. Il y a deux hypothèses simples : <br> <br>
+                <strong>Une peur extrême</strong> peut être un signe que les investisseurs sont trop inquiets. Cela
+                pourrait être une <strong>opportunité d'achat</strong>. <br> <br>
+                Lorsque les investisseurs deviennent <strong>trop avides</strong>, cela signifie que le marché
+                <strong>doit subir une correction</strong>. <br> <br>
+                Par conséquent, nous analysons le sentiment actuel du marché Bitcoin et comprimons les chiffres en un
+                simple mètre de 0 à 100. <br> <strong>0 signifie "Peur extrême"</strong>,<br> tandis que <strong>100
+                    signifie "Avidité extrême"</strong>.
+            </p>
+        </div>
+
+    </main>
+    <footer id="footer"> <!-- Pied de page -->
+    </footer>
+</body>
+
+</html>

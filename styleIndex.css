@@ -1,0 +1,351 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f794136c; /* Couleur de fond semi-transparente */
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Assure que l'overlay est au-dessus du contenu */
+    transition: opacity 3s ease;
+}
+
+.loading-image {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    background-image: url("img/bitcoin.png"); /* Chemin vers votre image de chargement */
+    background-size: cover;
+    animation: spin 2s linear infinite; /* Animation du chargement */
+}
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }    
+  
+html{
+    caret-color: transparent;
+    text-rendering: geometricPrecision;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+    font-size: auto;
+    font-weight: bold;
+    width: max-content;
+    text-shadow: 5px 5px 3px #0000003b;
+}
+
+.navbar {
+    margin: auto;
+    margin-bottom: 0px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    text-shadow: 5px 5px 3px #0000003b;
+}
+
+.navbar li a{
+    color: #131722;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    zoom: 115%;
+}
+
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top : 300px;
+    right: 5%;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    text-shadow: 5px 5px 3px #0000003b;
+}
+
+.menu-hamburger:hover {
+    rotate: 90deg;
+}
+
+.navbar.mobile-menu {
+    display: flex;
+}
+
+.logobtc {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 50px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Animations */
+.animation1.animation-initialized {
+    animation: animation1 1s ease-in-out;
+}
+@keyframes animation1 {
+    0% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.animation2.animation-initialized {
+    animation: animation2 0.1s ease-in-out;
+}
+@keyframes animation2 {
+    0% {
+        transform: translateX(500%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.animation3.animation-initialized {
+    animation: animation3 2s ease-in-out;
+}
+@keyframes animation3 {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fade-in.animation-initialized {
+    opacity: 0;
+    animation: fadeInAnimation 5s forwards;
+}
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+.logobtc2 {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    right: 50px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+#backgroundVideo {
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100%;
+    width: 250%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#span {
+    margin-top: 50px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    text-shadow: 5px 5px 3px #0000003b;
+}
+
+
+#menu {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+select {
+    margin-top: 0px;
+    border: 0px solid black;
+    border-radius: 25px;
+    padding-inline: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+select:hover {
+    border: 3px solid black; 
+}
+
+#content1 {
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 5%;
+    width: 300px;
+    height: max-content;
+    background-color: #f794136c;
+    background-color: #627dea6c;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+.tradingview-widget-container {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 80%;
+    height: 500px;
+    border: 16px solid black;
+    border-radius: 50px;
+    border-color: #131722;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+#tradingview_3c508 {
+    width: 100%;
+    height: 500px;
+}
+
+#content3 {
+    padding: 10px;
+    margin-top: 0px;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 850px;
+    background-color: #ddddddd0;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+#content3 p {
+    margin: auto;
+    text-align: center;
+}
+
+#content2 {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#fearAndGreed {
+    margin: auto;
+    width: 400px;
+    border: 0px solid black;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+#fearAndGreedText {
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 85px;
+    width: 80%;
+    max-width: 850px;
+    background-color: #ddddddd0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 2500px) { /* Responsive */
+    .loading-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1317227c;
+        backdrop-filter: blur(5px);
+        display: none;
+        z-index: 2;    
+    } 
+
+    .navbar li a{
+        color: #ffc375;     
+    }  
+    
+    .menu-hamburger {
+        display: block;  
+        top : 220px;  
+    }  
+
+    .logobtc {
+        position: relative;
+        top: 15px;
+        left: 3px;   
+    }
+
+    .logobtc2 {
+        display: none;
+    }  
+
+    select {
+        margin-top: 50px; 
+    } 
+
+    #content3 {
+        width: 90%;
+    }
+
+    #fearAndGreedText {
+        width: 90%; 
+    }   
+}

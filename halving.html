@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styleHalving.css">
+    <script src="scriptAbout.js" defer></script>
+    <script>
+        var nhiframe = document.getElementById('nhiframe');
+        window.addEventListener('message', function (e) {
+            // message that was passed from iframe page
+            // check message content if you have other messages too
+            let message = e.data;
+            nhiframe.style.height = message.height + 'px';
+        }, false);
+    </script>
+</head>
+
+<body>
+    <div class="loading-overlay"> <!-- Overlay du chargement -->
+        <div class="loading-image"></div> <!-- Image du chargement -->
+    </div>
+    <div id="backgroundVideo">
+        <video autoplay muted loop center>
+            <source src="img/lighthouse_-_1917 (1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div> <!-- Ajoute la vidéo de fond -->
+    <header id="header"> <!-- En-tête de la page -->
+        <div class="fade-in" id="title"> <!-- Titre du site -->
+            <img src="img/bitcoin.png" alt="logo bitcoin" class="logobtc" />
+            <img src="img/bitcoin.png" alt="logo bitcoin" class="logobtc2" />
+        </div>
+        <div id="span" class="txt-rotate fade-in" data-period="2000"
+            data-rotate='["Revolutionary.", "Innovative.", "Growth.", "Opportunity.", "Disruptive.", "Digital.", "Emerging.", "Promising.", "Decentralized.", "Financial freedom.", "Advancement.", "Revelation.", "Success.", "Expansion.", "Adoption.", "Reform.", "Revolution.", "Progress.", "Visionary.", "Prosperity.", "Transformation.", "Exploration.", "Empowerment.", "Evolution.", "Secure exchange."]'>
+            Test </div>
+        <nav class="navbar animation1">
+            <li><a href="index.html">Accueil</a> </li>
+            <li><a href="about.html">A propos</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+            <li><a href="halving.html">Halving</a></li>
+        </nav>
+        <img src="img/menu.png" alt="logo menu" class="menu-hamburger" />
+    </header>
+    <main id="main"> <!-- Corps de la page -->
+        <div id="content4" class="fade-in">
+            <p>
+            <h2>Le halving</h1>De nouvaux bitcoins sont émis par le réseau Bitcoin toutes les 10 minutes. Au cours des
+                quatre premières années de l'existence du Bitcoin, le total de nouvaux bitcoins émis toutes les 10
+                minutes était de 50. Tous les quatre ans, ce nombre est divisé par deux. Le jour où le total est divisé
+                par deux est appelé « halving ».</p>
+        </div>
+        <div id="content3" class="fade-in">
+            <iframe src="https://widget.nicehash.com/countdown/btc-halving-2024-05-10-12-00" width="400" height="350"
+                scrolling="no" id="nhiframe"></iframe>
+        </div>
+    </main>
+    <footer id="footer"> <!-- Pied de page -->
+    </footer>
+</body>
+
+</html>

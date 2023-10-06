@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleContact.css">
+    <script src="scriptContact.js" defer></script>
+    <script src="https://s3.tradingview.com/tv.js" defer></script>
+</head>
+<body>
+    <div class="loading-overlay"> <!-- Overlay du chargement -->
+        <div class="loading-image"></div> <!-- Image du chargement -->
+    </div>
+    <img id="backgroundVideo"  src="img/pexels-josh-sorenson-1025349.jpg"/> <!-- Ajoute la vidéo de fond -->
+    <header id = "header"> <!-- En-tête de la page -->
+        <div class="fade-in" id = "title"> <!-- Titre du site -->
+            <img src="img/bitcoin.png" alt="logo bitcoin" class="logobtc"/>
+            <img src="img/bitcoin.png" alt="logo bitcoin" class="logobtc2"/>
+        </div>
+        <div id = "span" class = "txt-rotate fade-in" data-period="2000" data-rotate='["Revolutionary.", "Innovative.", "Growth.", "Opportunity.", "Disruptive.", "Digital.", "Emerging.", "Promising.", "Decentralized.", "Financial freedom.", "Advancement.", "Success.", "Expansion.", "Adoption.", "Reform.", "Revolution.", "Progress.", "Visionary.", "Prosperity.", "Transformation.", "Empowerment.", "Evolution."]'> Test </div>
+        <nav class= "navbar animation1">
+            <li><a href="index.html">Accueil</a> </li>
+            <li><a href="about.html">A propos</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+            <li><a href="halving.html">Halving</a></li>
+        </nav>
+        <img src="img/menu.png" alt="logo menu" class="menu-hamburger"/>
+    </header>
+    <main id = "main"> <!-- Corps de la page -->
+        <div id = "content3" class = "fade-in"> <!-- Contenu 3 de la page -->
+            <h2>Contact</h2>
+            <p>Si vous avez des <strong>questions brûlantes, des suggestions créatives</strong> à partager ou si vous ressentez le désir irrésistible de plonger dans le monde passionnant et dynamique de la cryptomonnaie, <strong>notre porte est toujours ouverte</strong>. <br><br>Ne laissez pas vos interrogations demeurer sans réponses ni vos idées rester confinées dans votre esprit. <strong>Utilisez simplement le formulaire ci-dessous</strong> pour nous faire parvenir vos pensées et vos requêtes. <br><br>Alors, que vous soyez un <strong>néophyte curieux ou un passionné chevronné de la cryptomonnaie</strong>, que vous cherchiez à comprendre <strong>les mécanismes de base, à explorer de nouvelles opportunités</strong> d'investissement ou à discuter des implications plus larges de cette révolution financière, <strong>nous sommes là pour vous accompagner</strong> à chaque étape.<br><br> Nous sommes impatients de vous entendre et <strong>nous vous répondrons dans les plus brefs délais</strong>.</p>        </div>
+            <form id="contact-form" class="contact-form"  method="post" action="send_email.php">
+                <div class="input-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+    </main>
+    <footer id="footer"> <!-- Pied de page -->
+    </footer>
+</body>
+</html>
